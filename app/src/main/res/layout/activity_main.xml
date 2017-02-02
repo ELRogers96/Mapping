@@ -6,6 +6,25 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LatitudeEditText"
+        android:hint="Latitude" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LongitudeEditText"
+        android:hint="Longitude" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SubmitButton"
+        android:hint="Submit" />
+
     <org.osmdroid.views.MapView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,4 +33,5 @@
         android:id="@+id/map1"
         tilesource="Mapnik"
         />
+
 </LinearLayout>

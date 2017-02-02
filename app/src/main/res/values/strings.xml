@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Mapping</string>
+    <string name="editText">Latitude</string>
+    <string name ="editText2">Longitude</string>
+    <string name="SubmitButton">Submit</string>
 </resources>
