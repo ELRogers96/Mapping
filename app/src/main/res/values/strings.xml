@@ -3,4 +3,7 @@
     <string name="editText">Latitude</string>
     <string name ="editText2">Longitude</string>
     <string name="SubmitButton">Submit</string>
+    <string name="choosemap">Choose Map Style</string>
+    <string name="regularview">Regular View</string>
+    <string name="cyclemapview">Cycle Map</string>
 </resources>
