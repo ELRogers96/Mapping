@@ -79,6 +79,13 @@ public class HelloMap extends Activity implements OnClickListener
             startActivityForResult(intent,0);
             return true;
         }
+
+        else if(item.getItemId() == R.id.setlocation)
+        {
+            Intent intent = new Intent (this,SetLocationActivity.class);
+            startActivityForResult(intent,1);
+            return true;
+        }
         return false;
 
     }
@@ -102,6 +109,23 @@ public class HelloMap extends Activity implements OnClickListener
                     mv.getTileProvider().setTileSource(TileSourceFactory.MAPNIK);
                 }
             }
+        }
+
+        else if(requestCode==1)
+        {
+
+            if (resultCode==RESULT_OK)
+            {
+
+                Bundle extras=intent.getExtras();
+                double latitude = extras.getDouble("com.example.1rogee03.latitude");
+                double longitude = extras.getDouble("com.example.1rogee03.longitude");
+
+                mv.getController().setCenter(new GeoPoint(longitude,latitude));
+
+
+            }
+
         }
     }
 
